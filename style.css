@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.workingArea {
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav {
+    pointer-events: all;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0%, -50%);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-left {
+    min-width: 50%;
+}
+
+.hero-left .elem {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+.hero-left .elem h1:nth-child(1) {
+    top: 0;
+}
+
+.hero-left .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    line-height: .9;
+    font-size: 11vw;
+}
+
+.hero-left button {
+    pointer-events: all;
+    font-family: "kajiro";
+    margin-top: 4vw;
+    padding: .3vw 3vw;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+    color: white;
+}
+
+.hero-right p {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.hero-right .imagediv {
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(Images/hero-right-image.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-right p:nth-child(3) {
+
+    margin-bottom: 70px;
+
+}
